@@ -4,4 +4,7 @@
     <string name="chatbot_name">Chat Bot</string>
     <string name="chattingroom_header">Chat Rooms</string>
     <string name="chattingroom_name">chattingroom1</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

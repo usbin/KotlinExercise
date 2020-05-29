@@ -24,7 +24,7 @@ class CustomAdapter : RecyclerView.Adapter<Holder>(){
 }
 class Holder(itemView: View) : RecyclerView.ViewHolder(itemView){
     fun setChattingRoom(room : ChattingRoom){
-        itemView.buttonChattingRoom.text = "${room.name}"
-        itemView.timestamp.text = "${room.timestamp} minute ago"
+        itemView.button_chattingroom.text = "${room.name}"
+        itemView.timestamp_chattingroom.text = "${room.timestamp} minute ago"
     }
 }
