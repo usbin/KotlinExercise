@@ -1,5 +1,6 @@
 package com.example.basicsyntax
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.Gravity
 import android.view.MenuItem
@@ -8,7 +9,6 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.PopupMenu
 import androidx.recyclerview.widget.LinearLayoutManager
 import kotlinx.android.synthetic.main.activity_main.*
-import kotlinx.android.synthetic.main.chattingroom_menu.*
 
 class MainActivity : AppCompatActivity() {
 
@@ -22,7 +22,11 @@ class MainActivity : AppCompatActivity() {
         rvChattingRooms.adapter = adapter
         rvChattingRooms.layoutManager = LinearLayoutManager(this)
 
-        
+        //챗봇 클릭했을 때의 리스너
+        buttonChatBot.setOnClickListener {
+
+        }
+
         button_chattingroom_menu.setOnClickListener {
             var menuPopup = PopupMenu(this, button_chattingroom_menu)
             menuPopup.menuInflater.inflate(R.menu.menu_chattingroom_top, menuPopup.menu)
@@ -32,8 +36,12 @@ class MainActivity : AppCompatActivity() {
 
                 when(item){
                     R.id.menuitem_createroom -> {
+                        val nextIntent = Intent(this, CreateRoomAcvitivy::class.java)
+                        startActivity(nextIntent)
                     }
                     R.id.menuitem_searchroom -> {
+                        val nextIntent = Intent(this, SearchRoomActivity::class.java)
+                        startActivity(nextIntent)
 
                     }
                 }

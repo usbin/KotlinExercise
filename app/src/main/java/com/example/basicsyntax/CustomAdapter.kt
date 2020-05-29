@@ -4,7 +4,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import kotlinx.android.synthetic.main.rv_chattingrooms_item.view.*
+import kotlinx.android.synthetic.main.rvitem_chattingroom.view.*
 
 class CustomAdapter : RecyclerView.Adapter<Holder>(){
     var listData = mutableListOf<ChattingRoom>()
@@ -13,7 +13,7 @@ class CustomAdapter : RecyclerView.Adapter<Holder>(){
         return listData.size
     }
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): Holder{
-        val view = LayoutInflater.from(parent.context).inflate(R.layout.rv_chattingrooms_item, parent, false)
+        val view = LayoutInflater.from(parent.context).inflate(R.layout.rvitem_chattingroom, parent, false)
         return Holder(view)
     }
 
