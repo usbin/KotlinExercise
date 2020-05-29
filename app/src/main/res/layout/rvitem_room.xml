@@ -5,7 +5,10 @@
     android:id="@+id/roomTalkingList"
     android:layout_width="match_parent"
     android:layout_height="70dp"
-    android:orientation="horizontal">
+    android:orientation="horizontal"
+
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp">
 
 
     <ImageView
@@ -25,18 +28,21 @@
         android:id="@+id/roomlog_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
         android:text="Tom"
+        app:layout_constraintBottom_toTopOf="@+id/roomlog_text"
         app:layout_constraintStart_toEndOf="@+id/image_chattingroom"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/roomlog_text"
-        android:layout_width="116dp"
+        android:layout_width="wrap_content"
         android:layout_height="34dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/message_border"
         android:gravity="start|center_vertical"
         android:paddingLeft="10dp"
+        android:paddingRight="10dp"
         android:text="Hello World!"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@+id/image_chattingroom"
@@ -46,8 +52,12 @@
         android:id="@+id/roomlog_timestamp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="5dp"
         android:text="n min ago"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="@+id/roomlog_text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/roomlog_text"
