@@ -1,8 +1,8 @@
 <resources>
     <string name="app_name">BasicSyntax</string>
-    <string name="chatting_header">Chattings</string>
+    <string name="chatting_header">Chatting</string>
     <string name="chatbot_name">Chat Bot</string>
-    <string name="chattingroom_header">Chat Rooms</string>
+    <string name="chattingroom_header">Room</string>
     <string name="chattingroom_name">chattingroom1</string>
 
     <!-- TODO: Remove or change this placeholder text -->

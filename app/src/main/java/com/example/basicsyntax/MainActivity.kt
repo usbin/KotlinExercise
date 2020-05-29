@@ -32,7 +32,6 @@ class MainActivity : AppCompatActivity() {
 
                 when(item){
                     R.id.menuitem_createroom -> {
-                        showCreateRoom()
                     }
                     R.id.menuitem_searchroom -> {
 
@@ -59,14 +58,6 @@ class MainActivity : AppCompatActivity() {
         return data
     }
 
-    fun showCreateRoom(){
-        val createRoomFragment = CreateRoomFragment()
-
-        val transaction = supportFragmentManager.beginTransaction()
-        transaction.add(R.id.frameLayout, createRoomFragment)
-        transaction.addToBackStack("createRoom")
-        transaction.commit()
-    }
 
     fun goBack(){
         onBackPressed()
