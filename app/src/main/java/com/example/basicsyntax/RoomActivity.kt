@@ -7,7 +7,7 @@ class RoomActivity : AppCompatActivity(){
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        //setContentView(R.layout.)
+        setContentView(R.layout.acivity_room)
 
     }
 }

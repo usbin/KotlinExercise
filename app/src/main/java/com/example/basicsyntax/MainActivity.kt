@@ -24,7 +24,8 @@ class MainActivity : AppCompatActivity() {
 
         //챗봇 클릭했을 때의 리스너
         buttonChatBot.setOnClickListener {
-
+            val nextIntent = Intent(this, RoomActivity::class.java)
+            startActivity(nextIntent)
         }
 
         button_chattingroom_menu.setOnClickListener {
